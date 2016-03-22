@@ -1,3 +1,7 @@
 $(document).ready(function(){
-	console.log("jQuery working");
+	$("#randomWikipedia").on("click",function(){
+		window.open("http://en.wikipedia.org/wiki/Special:Random");
+	});
+
+
 });
