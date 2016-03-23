@@ -4,9 +4,7 @@ $(document).ready(function(){
 	});
 
 	$("#searchWikipedia").on("click",function(){
-
 		$("#search_box").show();
-
       });
 
 	$("#resetButton").on("click",function(){
@@ -14,32 +12,45 @@ $(document).ready(function(){
 		$("#search_box").hide();
 	})
 		
-	 $("#submitQuery").on("click",function(){
+	 $("#submitQuery").on("click",function()
+	   {
 			var queryData = $("#searchCriteria").val();
-			alert(queryData);
+			console.log(queryData);
 
-			$.ajax({
+ 
+		    $.ajax({
 		        type: "GET",
-		        url: "http://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Albert%20Einstein&callback=?",
+		        url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page="+queryData+"&callback=?",
 		        contentType: "application/json; charset=utf-8",
 		        async: false,
 		        dataType: "json",
+		        // success: function (data, textStatus, jqXHR) {
+		        //     console.log(data);
+		        // },
+		        // error: function (errorMessage) {
+		        // }
+
 		        success: function (data, textStatus, jqXHR) {
-		            console.log(data);
-		        },
-		        error: function (errorMessage) {
-        		}
-    		});
+ 
+			            var markup = data.parse.text["*"];
+			            var blurb = $('<div></div>').html(markup);
+			 
+			            // remove links as they will not work
+			            blurb.find('a').each(function() { $(this).replaceWith($(this).html()); });
+			 
+			            // remove any references
+			            blurb.find('sup').remove();
+			 
+			            // remove cite error
+			            blurb.find('.mw-ext-cite-error').remove();
+			            $('#article').html($(blurb).find('p'));
+			 
+			        },
+			        error: function (errorMessage) {
+			        }
+
+		          });
+
 
 		});
-		
-    	
-    
-    // $.getJSON("http://en.wikipedia.org/w/api.php?action=parse&format=json&callback=?", {page:"Red Sea clownfish", prop:"text"}, function(data) {console.log(data);});
-
-
-
-  
-
-
 });
