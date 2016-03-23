@@ -10,6 +10,7 @@ $(document).ready(function(){
 	$("#resetButton").on("click",function(){
 		$("#searchCriteria").val("");
 		$("#search_box").hide();
+		$("#article").text("");
 	})
 		
 	 $("#submitQuery").on("click",function()
