@@ -5,8 +5,9 @@ $(document).ready(function(){
 
 	$("#searchWikipedia").on("click",function(){
 
+		$("#search_box").show();
 			
-    $.ajax({
+    	$.ajax({
         type: "GET",
         url: "http://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Albert%20Einstein&callback=?",
         contentType: "application/json; charset=utf-8",
