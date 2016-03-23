@@ -8,6 +8,11 @@ $(document).ready(function(){
 		$("#search_box").show();
 
       });
+
+	$("#resetButton").on("click",function(){
+		$("#searchCriteria").val("");
+		$("#search_box").hide();
+	})
 		
 	 $("#submitQuery").on("click",function(){
 			var queryData = $("#searchCriteria").val();
