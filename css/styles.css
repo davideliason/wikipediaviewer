@@ -19,8 +19,8 @@
   margin: 5% auto;
   text-align: center;
   padding: 2%;
-  background-color: black;
-  opacity: 0.2;
+  background-color: blue;
+  opacity: 0.4;
   color: white;
 }
 
@@ -39,10 +39,13 @@
 #search_box {
   display: none;
   padding-top: 20px;
+}
 
-}
-#search_box input{
+#search_box input {
   text-align: center;
+  
 }
+
+
 
 
