@@ -38,5 +38,11 @@
 
 #search_box {
   display: none;
+  padding-top: 20px;
+
 }
+#search_box input{
+  text-align: center;
+}
+
 
