@@ -7,7 +7,9 @@ $(document).ready(function(){
 
 		$("#search_box").show();
 
-		$("#submitQuery").on("click",function(){
+      });
+		
+	 $("#submitQuery").on("click",function(){
 			var queryData = $("#searchCriteria").val();
 			alert(queryData);
 
@@ -32,7 +34,7 @@ $(document).ready(function(){
 
 
 
-   });
+  
 
 
 });
