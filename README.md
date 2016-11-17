@@ -11,4 +11,6 @@ Either randomly chooses subject from Wikipedia or searches the api for the query
 
 ####To view code and test it out:  [Codepen.io](http://codepen.io/David_Eliason/pen/RaVNpa)  
 
+![WikipediaViewer](./wikipediaViewer.png "WikipediaViewer")
+
 #####2016 Copyright David Eliason. All Rights Reserved.
