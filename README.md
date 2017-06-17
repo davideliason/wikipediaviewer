@@ -3,7 +3,7 @@
 Either randomly chooses subject from Wikipedia or searches the api for the query parameters.
 
 ###March 22, 2016
-###Written By: [David Eliason](http://www.thedavideliason.com)
+###Written By: [David Eliason](http://www.deliason.com)
 
 ### Technologies Used:
 

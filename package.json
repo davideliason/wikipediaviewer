@@ -1,0 +1,30 @@
+{
+  "name": "wikipediaviewer",
+  "version": "1.0.0",
+  "description": "basic ajax querying",
+  "main": "server.js",
+  "engine": {
+    "node": "6.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davethemaker/wikipediaViewer.git"
+  },
+  "keywords": [
+    "ajax",
+    "api"
+  ],
+  "author": "David Eliason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davethemaker/wikipediaViewer/issues"
+  },
+  "homepage": "https://github.com/davethemaker/wikipediaViewer#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
