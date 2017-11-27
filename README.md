@@ -13,4 +13,6 @@ Either randomly chooses subject from Wikipedia or searches the api for the query
 
 ![WikipediaViewer](./wikipediaViewer.png "WikipediaViewer")
 
+[Return to Portfolio](https://davideliason.github.io/)
+
 #####2016 Copyright David Eliason. All Rights Reserved.
